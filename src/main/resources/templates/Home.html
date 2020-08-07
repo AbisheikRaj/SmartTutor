@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vguru</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+	  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+      crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" 
+	  integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" 
+	  crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" 
+	  integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" 
+	  crossorigin="anonymous"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+	  crossorigin="anonymous"/>     
+	   
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+		crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+		crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+		crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/b5e2f5363e.js"></script>
+		
+<link href="../static/styles/home.css" th:href="@{/styles/home.css}" type = "text/css" rel="stylesheet" />
+<link rel="icon" type="image/jpg" class="img-fluid" th:href = "@{/img/icon.jpg}">
+
+<div class = "logo">
+	<img style = "float : left; padding-top : 20px;" th:src = "@{/img/top.png}" alt = "top" />
+	<img class = "logo1" src="../static/img/logo.png" th:src="@{img/logo.png}"/>
+</div>
+
+<div class = "login_register">
+    <a href="/" th:href="@{/login}"><strong>Sign in</strong></a>&nbsp&nbsp
+    <a href="/" th:href="@{/registration}"><button class="btn btn-primary"><strong>Join for Free</strong></button></a>
+</div>
+
+</head>
+<body>
+<div>
+	<div class = "side_text">
+		<h1 class = "side_text_h1"><strong>E-Learning Platform</strong></h1>
+		<pre style = "margin-left : -100px"><i><b>
+		"Learning gives creativity.   
+		Creativity leads to thinking. 
+		Thinking provides knowledge. 
+		Knowledge makes you great."</b></i></pre>
+		<pre ><i>                                       - DR.A.P.J.ABDUL KALAM</i></pre>
+		<h3 class = "side_text_h3">Keep Learning and Achieve Your Goals</h3>
+		<a href="/" th:href="@{/registration}"><button class="btn btn-primary"><strong>Join for Free</strong></button></a>
+	</div>
+	<div>
+		<img style = "padding-top : 10px; margin-bottom : 10px;" th:src="@{/img/image.jpg}" width = 800px height = 350px class="rounded float-right" alt="images" />
+	</div>
+</div>
+<br>
+<br>
+<div>
+<h1 style = "text-align : center; padding-top : 400px;"><strong>Materials</strong></h1>
+</div><br><br><br>
+<div class="card-group">
+  <div class="card">
+    <img class="card_image" th:src="@{/img/cards/prekg.png}" width = 400px alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>PRE-KG</strong></h5>
+      <p class="card-text">
+       <ul>
+       <li>English Alphabets and Numbers.</li>
+       <li>Basic Words and Sentences.</li>
+       <li>Rhymes Videos.</li>
+       <li>Stories.</li>
+       </ul>
+       </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class= "card_image" th:src="@{/img/cards/SCIENCE.jpg}" width = 200px alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>SCIENCE</strong></h5>
+      <p class="card-text">
+      <ul>
+      <li>Fields of Science.</li>
+      <li>Physics.</li>
+      <li>Chemistry.</li>
+      <li>Biology.</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card_image" th:src="@{/img/cards/MATHS.jpg}" width = 200px alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>MATHS</strong></h5>
+      <p class="card-text">
+      <ul>
+      <li>Number System.</li>
+      <li>Algebra.</li>
+      <li>Statistics.</li>
+      <li>Geometry and Trignometry.</li>
+      <li>Probability</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+ </div>
+ <div class="card-group">
+  <div class="card">
+    <img class="card_image_JEE" th:src="@{/img/cards/JEE.jpg}" width = 400px alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>JEE(Joint Entrance Examination)</strong></h5>
+      <p class="card-text">
+       <ul>
+       <li>CBSE and StateBoard Syllabus</li>
+       <li>Covering Advanced Concepts.</li>
+       <li>Comprehensive Videos about Concepts.</li>
+       <li>Learning based on Techniques.</li>
+       </ul>
+       </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class= "card_image_NEET" th:src="@{/img/cards/NEET.jpg}" width = 200px alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><strong>NEET(National Eligibility Entrance Examination)</strong></h5>
+      <p class="card-text">
+      <ul>
+      <li>Advanced Teaching in Biology Concept</li>
+      <li>In Depth Learning</li>
+      <li>Discuss about Previous Year Exam</li>
+      <li>Comprehensive Videos about Concepts.</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+ </div>
+ <div>
+	<h1 style = "padding-top : 100px; text-align : center;"><strong>Partnership With</strong></h1>
+	<img th:src = "@{img/partner/coursera.png}" alt = "coursera" style = "padding-left : 275px; padding-right : 95px;"/>
+	<img th:src = "@{img/partner/edx.png}" alt = "edx" width = 100px style = "margin-left : 20px; margin-right : 100px;" />
+	<img th:src = "@{img/partner/litmos.png}" alt = "litmos" width = 200px />-->
+</div>
+
+<div style = "background : src(/img/registration.png); margin-top : 100px; margin-bottom : 100px;">
+	<img th:src = "@{/img/cards/prekg1.jpeg}" class = "rounded" style = "width : 590px; padding-left : 100px;" alt = "cards"/>
+	<div style = "float : right; margin-right : 135px; margin-top : 60px;">
+		<h1>Build Your Learning Skill</h1>
+		<p><i>"<b>Self-Learning is the Best Learning</b>"</i></p>
+		<p>Classes from PRE - Kindergarten to Higher Studies</p>
+		<a href="/" th:href="@{/registration}"><button class="btn btn-primary"><strong>Register Here >>></strong></button></a>
+	</div>
+</div>
+ 
+<!-- Footer -->
+<div>
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: black;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0" style = "color : white;">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic" target = " " href = "https://www.facebook.com/">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic" target = " " href = "https://twitter.com/">
+            <i class="fab fa-twitter white-text mr-4"> </i>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic" target = " " href = "https://www.linkedin.com/">
+            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+          </a>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Vguru Learning Platform</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>It is an E-Learning Platform from kindergarten to Entrance Exam Students. It nainly focus on 
+        giving education to all people free and easy to understand for uneducated people and 
+        useful for reaching a bright side in their future</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Materials</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a target = " " href= "https://en.wikipedia.org/wiki/Kindergarten">Kindergarten</a>
+        </p>
+        <p>
+          <a target = " " href= "https://en.wikipedia.org/wiki/Primary_education">Class 6 - 12</a>
+        </p>
+        <p>
+          <a target = " " href= "https://en.wikipedia.org/wiki/Joint_Entrance_Examination">JEE EXAM</a>
+        </p>
+        <p>
+          <a target = " " href= "https://en.wikipedia.org/wiki/National_Eligibility_cum_Entrance_Test_(Undergraduate)">NEET EXAM</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Coimbatore, CBE, TN, INDIA</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> Vguru@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 04362 - 273131</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 04362 - 231971</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">
+  	© 2020 Copyright: <a th:href = "..">Vguru Corporation</a> 
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</div>
+
+</body>
+</html>

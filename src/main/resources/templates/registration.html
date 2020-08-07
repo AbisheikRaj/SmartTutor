@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Vguru-Register</title>
+<link rel="stylesheet" 
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+	crossorigin="anonymous">
+	
+<link href="../static/styles/registration.css" th:href="@{/styles/registration.css}" type = "text/css" rel="stylesheet" />
+<link rel="icon" type="image/jpg" class="img-fluid" th:href = "@{/img/icon.jpg}">
+</head>
+<body>
+<div class = "logo">
+	<img src="../static/img/logo.png" class="img-fluid" th:src="@{img/logo.png}"/>
+</div>
+<div class="container">
+	<div class="row">
+	   <div class="col-md-6 col-md-offset-3">
+	 
+	   <br>
+	   <br>
+	   
+	   <!-- Success message -->
+	    <div th:if="${param.success}">
+     		<div class="alert alert-info">You've successfully registered</div>
+    	</div>
+  	
+  	<h1 style = "text-align : center">REGISTRATION</h1>
+  	
+  	<br>
+  
+    <form th:action="@{/registration}" th:object="${user}" method="post">	
+    
+		<div class = "glyphicon glyphicon-user" style = "padding-left : 115px">
+			<label class = "control-label" for = "firstName">FIRSTNAME</label>
+			<input style = "width : 340px" id="firstName" class="form-control" th:field="*{firstName}" placeholder = "Firstname" required autofocus = "autofocus" />
+		</div><br><br>
+		
+		<div class = "glyphicon glyphicon-user" style = "padding-left : 115px">
+			<label class = "control-label" for = "lastName">LASTNAME</label>
+			<input style = "width : 340px" id="lastName" class="form-control" th:field="*{lastName}" placeholder = "Lastname" required autofocus = "autofocus" />
+		</div><br><br>
+		
+		<div class = "glyphicon glyphicon-envelope" style = "padding-left : 115px">
+			<label class = "control-label" for = "email">EMAIL</label>
+			<input style = "width : 340px" id="email" class="form-control" th:field="*{email}" placeholder = "Email" required autofocus = "autofocus" />
+		</div><br><br>
+		
+		<div class = "glyphicon glyphicon-rub" style = "padding-left : 115px">
+			<label class = "control-label" for = "password">PASSWORD</label>
+			<input style = "width : 340px" type = "password" id="password" class="form-control" th:field="*{password}" placeholder = "Password" required autofocus = "autofocus" />
+		</div><br><br>
+		
+		<div class="form-group" style = "text-align : center" >
+	      <button type="submit" class="btn btn-success">Register</button><br><br>
+	      <span><strong>Already registered?&nbsp</strong> <a href="/" th:href="@{/login}">Login here</a></span>
+     	</div>
+     </form>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
