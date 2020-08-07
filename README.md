@@ -1,8 +1,6 @@
 # SmartTutor (Vguru)
 * Vguru(SmartTutor) is a web application developed under the requirements of Virtusa Corporation. It is an E-Learning Platform which is used for Pre-Kindergarten students 
-and also used for Entrance Exam students like JEE, NEET. This application have lots of videos about concepts like Maths and Science for classes 6 - 12, NEET syllabus, JEE syllabus
-and even rhymes videos for pre-kindergarten kids. The main focus of this application is to learn all things in one place. If I have separate organization like BYJU's or anyother 
-learning platforms, I can make own videos by my staffs/professors and post it in this web application. But now i can get these videos from khan academy and vedantu platform.
+and also used for Entrance Exam students like JEE, NEET. This application that helps students as a learning platform, that include language, specific subjects such as Maths, science and even better help student to focus on board subjects.
 
 * Technology Stacks
 
@@ -11,7 +9,7 @@ learning platforms, I can make own videos by my staffs/professors and post it in
   * BackEnd      -> MYSQL
   
 * Requirements :
-  * Spring Tool Suite 4
+  * Spring Tool Suite 4 / Eclipse with STS
   * Apache Tomcat V.8
   * Mysql Server
   * Mysql Workbench
