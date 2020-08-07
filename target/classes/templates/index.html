@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+
+<link rel="stylesheet" 
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" 
+	integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" 
+	crossorigin="anonymous">
+	
+<link rel="icon" type="image/jpg" class="img-fluid" th:href = "@{/img/icon.jpg}">
+<link href="../static/styles/index.css" th:href="@{/styles/index.css}" type = "text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+	
+	<!-- Logo Section -->
+	<div class = "logo">
+		<img src="../static/img/logo.png" class="img-fluid" th:src="@{img/logo.png}"/>
+	</div>
+	
+	<!-- Logout Section -->
+	<div class="nav navbar-nav">
+	   <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">
+	   <span class="btn btn-primary"><strong>Logout</strong></span></a>
+	   </li>
+	</div>
+	
+	<br>
+	<br>
+
+	<!-- Navigation Bar Section -->
+	
+	<!-- Card Section Prekg-->
+	<div class="card">
+	<img class="card-img-top" th:src="@{img/prekg.jpg}" width = 150px height = 145px alt="Card image cap">
+	  <h5 class="card-header"><strong>PRE.K.G</h5>
+	  <div class="card-body">
+	    <h5 class="card-title">Pre Kindergarten</h5>
+	    <p class="card-text">Pre-kindergarten is a voluntary classroom-based preschool 
+	    		program for children below the age of five</p>
+	    <a href = "/" th:href="@{prekg}" class="btn btn-primary">Let's Go >></a>
+	  </div>
+	</div>
+	
+	<!-- Card Section Lower-->
+	<div class="card">
+	<img class="card-img" th:src="@{/img/cards/SCIENCE.jpg}" alt="Card image cap">
+	  <h5 class="card-header"><strong>SCIENCE</strong></h5>
+	  <div class="card-body">
+	    <h5 class="card-title">Science</h5>
+	    <p class="card-text">The branch of knowledge that examines the structure and behavior of the physical and natural world through observation and experiment</p>
+		<p class="card-text">Science education is most commonly broken down into the following three fields : 1) Biology 2) Physics 3) Chemistry</p>
+		<a href="/" th:href = "@{Lower}" class="btn btn-primary">Let's Go >></a>
+	  </div>
+	</div>
+
+	<div class="card">
+		<img class="card-img-maths" th:src="@{/img/cards/MATHS.jpg}" alt="Card image cap">
+		<h5 class="card-header"><strong>MATHS</strong></h5>
+		<div class="card-body">
+			<h5 class="card-title">Mathematics</h5>
+			<p class="card-text">Mathematics includes the study of such topics as quantity, structure, space, and change. It has no generally accepted definition.</p>
+			<p class="card-text">It uses patterns to formulate new conjectures; they resolve the truth or falsity of such by mathematical proof.</p>
+			<a href="/" th:href = "@{/Higher}" class="btn btn-primary">Let's Go >></a>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img-JEE" th:src="@{/img/cards/JEE.jpg}" alt="Card image cap">
+		<h5 class="card-header"><strong>JEE</strong></h5>
+		<div class="card-body">
+			<h5 class="card-title">Joint Entrance Examination</h5>
+			<p class="card-text">Joint Entrance Examination is an engineering entrance examination conducted for admission to various engineering colleges in India.</p>
+			<p class="card-text">It is constituted by two different examinations - JEE Main and the JEE Advanced.</p>
+			<a href="/" th:href = "@{/JEE}" class="btn btn-primary">Let's Go >></a>
+		</div>
+	</div>
+
+	<div class="card">
+		<img class="card-img-NEET" th:src="@{/img/cards/NEET.jpg}" alt="Card image cap">
+		<h5 class="card-header"><strong>NEET</strong></h5>
+		<div class="card-body">
+			<h5 class="card-title">National Eligibility Entrance Test</h5>
+			<p class="card-text">The National Eligibility Entrance Test (Undergraduate), formerly the All India Pre-Medical Test, is an entrance examination in India for students 
+				who wish to study undergraduate medical courses.</p>
+			<a href="/" th:href = "@{NEET}" class="btn btn-primary">Let's Go >></a>
+		</div>
+	</div>
+   </body>
+</html>
