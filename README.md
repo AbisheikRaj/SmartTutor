@@ -4,7 +4,7 @@ and also used for Entrance Exam students like JEE, NEET. This application have l
 and even rhymes videos for pre-kindergarten kids. The main focus of this application is to learn all things in one place. If I have separate organization like BYJU's or anyother 
 learning platforms, I can make own videos by my staffs/professors and post it in this web application. But now i can get these videos from khan academy and vedantu platform.
 
-* Technology Stack
+* Technology Stacks
 
   * FrontEnd     -> HTML, CSS
   * Server Side  -> Spring MVC
